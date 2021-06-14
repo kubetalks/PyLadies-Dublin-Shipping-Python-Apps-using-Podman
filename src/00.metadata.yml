@@ -1,0 +1,38 @@
+---
+title: "Shipping Python Apps using Podman"
+subtitle: "Podman & Django Quickstart"
+author:
+- "Elif Mosessohn-Samedin, RHCA II, Eau de Web"
+#date: \today
+
+abstract: |
+  A quick introduction to Red Hat Container Tools for Pythonistas.
+  Building and running Python applications using Podman.
+  Exploring the manner containers benefit developers.
+keywords: containers, podman, podman-compose, kubernetes, openshift, redhat, python
+description: |
+  Set up a Development Environment using Red Hat Container Tools
+subject: Red Hat Container Tools
+category: presentation
+lang: en-US
+
+output: beamer_presentation
+aspectratio: "169"
+toc: true
+slide_level: 2
+incremental: false # Incremental bullets
+classoption: "aspectratio=169"
+dpi: 300
+
+theme: "metropolis"
+colortheme: "owl"
+sansfont: IBM Plex Sans
+monofont: IBM Plex Mono
+mainfont: IBM Plex Sans
+fontsize: 8pt
+highlight: tango
+
+logo: ./template/logo.png
+titlegraphic: ./template/frontpage.png
+section-titles: true
+---

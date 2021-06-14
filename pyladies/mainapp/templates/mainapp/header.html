@@ -1,0 +1,27 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  {% load static %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PyLadies Dublin June Lightning Talks">
+  <meta name="author" content="Elif Samedin">
+
+  <title>PyLadies Dublin</title>
+
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{% static 'css/custom_styles.css' %}">
+
+</head>
+
+<body>
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main>
+</body>
+
+</html>

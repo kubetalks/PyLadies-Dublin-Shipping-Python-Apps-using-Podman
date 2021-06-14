@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  web:
+    restart: always
+    build:
+      context: .
+    env_file:
+      - ./.env
+    expose:
+      - "8000"
+    ports:
+      - "8000:8000"
+    command: /usr/local/bin/gunicorn pyladies.wsgi:application -b :8000 -w 2
+    depends_on:
+      - db
+  db:
+    restart: always
+    image: postgres:latest
+    env_file:
+      - ./.env.postgres
+    expose:
+      - "5432"
+    volumes:
+      - ./data:/var/lib/postgresql/data/
+
+volumes:
+  data:
